@@ -1,0 +1,24 @@
+		ABHINAY
+		-------
+
+1) Delete functionality
+	- pressing "-" image on the home screen should pop up a screen which contains the list of the already contained reminders with adjacent checkboxes.
+	- on selecting whatever number of reminders and pressing delete, the records should be also deleted from the database.
+	- invoke the functionality via the single ton class that has been created. (functionality of deletion)
+	- once the delete operation is done, redirect back to the home screen.
+	- on pressing cancel, don't delete anything and regress back to the home page.
+
+	invoking a singleton class
+	<className>.<GetObj()>.<call any instance method>
+
+		
+
+		FATEMA
+		------
+
+1) Work on changing the UI
+
+	- think of a better color theme. -- Have implemented color scheme.
+                                         -- Worked on Schedule SMS   
+
+2) provide edit and delete functionality to the reminder details view, which we see when we click on any of the reminders on the list.

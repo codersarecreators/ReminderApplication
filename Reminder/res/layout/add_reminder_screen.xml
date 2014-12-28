@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#3B5999"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/addReminderScreen_notesEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dip"
+        android:layout_weight="1"
+        android:hint="@string/addReminderScreen_notes"
+        android:lines="4"
+        android:textColor="#FDE8D7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addReminderScreen_dateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/btn_design_round"
+            android:onClick="selectDateOnAddReminderScreen"
+            android:padding="5dip"
+            android:text="@string/addReminderScreen_date" >
+        </Button>
+
+        <TextView
+            android:id="@+id/addReminderScreen_dateTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:minWidth="20dip"
+            android:text=""
+            android:textColor="#FDE8D7"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addReminderScreen_timeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/btn_design_round"
+            android:onClick="selectTimeOnAddReminderScreen"
+            android:padding="5dip"
+            android:text="@string/addReminderScreen_time" >
+        </Button>
+
+        <TextView
+            android:id="@+id/addReminderScreen_timeTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:minWidth="20dip"
+            android:text=""
+            android:textColor="#FDE8D7"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/addReminderScreen_scheduleSMSChkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/addReminderScreen_scheduleSMS"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/addReminderScreen_dynamicScheduleSMSTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" 
+        android:orientation="horizontal">
+
+        
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="@string/addReminderScreen_recipient"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addReminderScreen_dynamicContactNoTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:clickable="true"
+                android:onClick="editScheduleSMS" />
+       
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="6dip"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addReminderScreen_setBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_design_for_main_functions"
+            android:onClick="setReminder"
+            android:padding="10dip"
+            android:text="@string/addReminderScreen_setReminder" />
+
+        <Button
+            android:id="@+id/addReminderScreen_cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_design_for_main_functions"
+            android:onClick="cancelReminder"
+            android:padding="10dip"
+            android:text="@string/addReminderScreen_cancelReminder" />
+    </LinearLayout>
+
+</LinearLayout>

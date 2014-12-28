@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayoutDeleteDialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:scrollbars="vertical"
+    android:stretchColumns="1" >
+
+    <TableRow android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listViewDeleteReminder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:divider="#0000CC"
+            android:dividerHeight="1sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_gravity="bottom"
+        android:layout_weight="0" >
+
+        <Button
+            android:id="@+id/deleteReminderDialogue_deleteBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/deleteReminderDialogue_delete"
+            />
+
+        <Button
+            android:id="@+id/deleteReminderDialogue_backBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/deleteReminderDialogue_back"
+            android:onClick="returnToHomeScreen" />
+    </TableRow>
+
+</TableLayout>
